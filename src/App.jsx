@@ -10,14 +10,14 @@ import Todolist from './todolist/todolist'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import UpdatePage from './todolist/updatePage'
 import TodoContext from './todolist/todoContext'
-
+import MoviesApp from './moviesApp/moviesApp'
 
 function App() {
 
 
   return (
     <>
-      < TodoContext>
+      {/* < TodoContext>
         <BrowserRouter>
           <Routes>
 
@@ -26,8 +26,9 @@ function App() {
 
           </Routes>
         </BrowserRouter>
-      </ TodoContext>
-
+      </ TodoContext> */}
+      
+    <MoviesApp/>
 
     </>
   )
