@@ -1,5 +1,5 @@
 import React, { useState, useContext } from "react";
-import { Navigate, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { Mycontext } from "./todoContext";
 
 const Todolist = () => {
@@ -16,9 +16,7 @@ const Todolist = () => {
     setinput("");
   }
 
-  function remove() {
-    
-  }
+
   const navigate = useNavigate();
 
 

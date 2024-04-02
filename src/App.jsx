@@ -4,13 +4,13 @@ import './App.css'
 // import StarRating from './StarRating/StarRating'
 import Form from './formInReactjsx/Form'
 import './formInReactjsx/form.css'
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import NewFile from './formInReactjsx/newFile'
-import Todolist from './todolist/todolist'
+// import NewFile from './formInReactjsx/newFile'
+// import Todolist from './todolist/todolist'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import UpdatePage from './todolist/updatePage'
-import TodoContext from './todolist/todoContext'
+// import UpdatePage from './todolist/updatePage'
+// import TodoContext from './todolist/todoContext'
 import MoviesApp from './moviesApp/moviesApp'
+import ModalContext from './moviesApp/ModalContext'
 
 function App() {
 
@@ -28,7 +28,12 @@ function App() {
         </BrowserRouter>
       </ TodoContext> */}
       
-    <MoviesApp/>
+     <BrowserRouter>
+     <Routes>
+      <Route path='/' element={<MoviesApp/>}/>
+      <Route path='/ModalContext' element={<ModalContext/>}/>
+     </Routes>
+     </BrowserRouter>
 
     </>
   )
