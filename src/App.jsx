@@ -4,13 +4,13 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import './App.css'
 // import StarRating from './StarRating/StarRating'
 import Form from './formInReactjsx/Form'
-import './formInReactjsx/form.css'
+
 // import NewFile from './formInReactjsx/newFile'
 // import Todolist from './todolist/todolist'
 // import UpdatePage from './todolist/updatePage'
 // import TodoContext from './todolist/todoContext'
 import MoviesApp from './moviesApp/moviesApp'
-
+import Tailwind from './tailwindProject/Tailwind'
 // import Tailwind from './tailwindProject/Tailwind'
 // import Basic from './basic.jsx/basic'
 
@@ -34,11 +34,11 @@ function App() {
  
 
  
-   <MoviesApp/>
+   {/* <MoviesApp/> */}
   
 
 
-      {/* <Tailwind/> */}
+     <Tailwind/>
 {/* <Basic /> */}
 
 </>

@@ -1,36 +1,36 @@
 import React, { useEffect, useState } from "react";
 import MovieCard from "./movieCard";
 
-
-
 const MoviesApp = () => {
-  const namesOfMovies = ["ant-man", "spider-man", "captain-america", "demon-slayer", ];
+  const namesOfMovies = [
+    "ant-man",
+    "spider-man",
+    "captain-america",
+    "demon-slayer",
+  ];
 
   let randomIndex = Math.floor(Math.random() * namesOfMovies.length);
   const randomMovie = namesOfMovies[randomIndex];
-  
-  const [input, setinput] = useState(randomMovie);
 
-
+  const [input, setInput] = useState(randomMovie);
+  const [filterQuery, setFilterQuery] = useState("");
   const [searchMovies, setSearchMovies] = useState([]);
-  const [isopen, setisopen] = useState(false);
-  const [searchTerm, setsearchTerm] = useState("");
-  const [loading, setloading] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
+  const [searchTerm, setSearchTerm] = useState("");
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
-    setloading(true);
+    setLoading(true);
     const fetchingApi = async () => {
       const key = `eca6ca52`;
       const URL = `https://www.omdbapi.com/?s=${input}&apikey=${key}`;
-      {
-        const response = await fetch(URL);
-        const finalData = await response.json();
-        console.log(finalData);
-        if (finalData.Response === "True") {
-          setSearchMovies(finalData.Search);
-        }
-        setloading(false);
+      const response = await fetch(URL);
+      const finalData = await response.json();
+      console.log(finalData);
+      if (finalData.Response === "True") {
+        setSearchMovies(finalData.Search);
       }
+      setLoading(false);
     };
 
     fetchingApi();
@@ -39,17 +39,21 @@ const MoviesApp = () => {
   useEffect(() => {
     if (loading) {
       const timer = setTimeout(() => {
-        setloading(false);
+        setLoading(false);
       }, 4000);
 
       return () => clearTimeout(timer); // Clear the timeout on component unmount
     }
   }, [loading]);
 
-  function searchTerming() {
-    setinput(searchTerm);
-    setisopen(false);
-    setloading(true);
+  function handleFilterChange(e) {
+    setFilterQuery(e.target.value);
+  }
+
+  function handleSearch() {
+    setInput(searchTerm);
+    setIsOpen(false);
+    setLoading(true);
   }
 
   return (
@@ -58,12 +62,14 @@ const MoviesApp = () => {
         <div className="mx-[30%]">
           <h1 className="text-4xl">not halal movies</h1>
           <input
+            onChange={handleFilterChange}
+            value={filterQuery}
             type="text"
             className="px-[100px] py-4 rounded-lg  my-[3em] bg-gray-400"
           />
           <button
             className="bg-blue-400 px-9 py-2 rounded-lg my-5 mx-[20%] hover:shadow-lg"
-            onClick={() => setisopen(true)}
+            onClick={() => setIsOpen(true)}
           >
             search Movies
           </button>
@@ -71,24 +77,26 @@ const MoviesApp = () => {
         <div>
           <div className=" flex justify-center "></div>
           <div className="flex grid grid-cols-3 ml-[1rem]">
-            {searchMovies.map((item, index) => {
-              return (
+            {searchMovies
+              .filter(movie =>
+                movie.Title.toLowerCase().includes(filterQuery.toLowerCase())
+              )
+              .map((movie, index) => (
                 <div className="block my-9" key={index}>
                   <MovieCard
                     key={index}
-                    poster={item.Poster}
-                    title={item.Title}
-                    year={item.Year}
-                    imdb={item.imdbID}
-                    type={item.Type}
+                    poster={movie.Poster}
+                    title={movie.Title}
+                    year={movie.Year}
+                    imdb={movie.imdbID}
+                    type={movie.Type}
                   />
                 </div>
-              );
-            })}
+              ))}
           </div>
         </div>
       </div>
-      {isopen === true && (
+      {isOpen && (
         <div
           className="fixed inset-0 bg-black bg-opacity-25 backdrop-blur-sm flex justify-center items-center"
           style={{ zIndex: 10 }}
@@ -97,25 +105,20 @@ const MoviesApp = () => {
             <div className="w-[600px] h-[300px] bg-gray-700 rounded-lg mx-[10%] ">
               <h1 className="text-center text-2xl pt-5 font-bold">search it</h1>
               <input
-                onChange={(e) => setsearchTerm(e.target.value)}
+                onChange={(e) => setSearchTerm(e.target.value)}
                 type="text"
                 className="px-[100px] py-4 rounded-lg mx-[19%] my-[3em]"
               />
               <div className="my-4">
                 <button
                   className="mx-[22%] bg-red-500 text-white px-9 py-2 rounded-lg hover:shadow-lg"
-                 onClick={()=>{setisopen(false)}}
+                  onClick={() => setIsOpen(false)}
                 >
                   close
                 </button>
                 <button
                   className=" bg-blue-600 text-white px-9 py-2 rounded-lg hover:shadow-lg"
-                  onClick={() => {
-                    setinput(searchTerm);
-                    setisopen(false)
-                    setloading(true)
-                   
-                  }}
+                  onClick={handleSearch}
                 >
                   search
                 </button>
@@ -124,7 +127,7 @@ const MoviesApp = () => {
           </div>
         </div>
       )}
-      {loading === true && <div>loading....</div>}
+      {loading && <div>loading....</div>}
     </div>
   );
 };

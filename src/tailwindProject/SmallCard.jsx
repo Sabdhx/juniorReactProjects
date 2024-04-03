@@ -10,7 +10,7 @@ const SmallCard = () => {
         <h1 className="text-[17px] font-bold">
           wedding photography
         </h1>
-        <h1 className="text-[13px]">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
+        <h1 className="text-[13px]">Lorem ipsum dolor sit amet consectetur adipisicing elit.ipsum dolor sit amet consectetur adipisicing elitipsum dolor </h1>
        
       </div>
     </div>
