@@ -1,23 +1,26 @@
 import React from 'react'
 
+
 const MovieCard = (props) => {
   return (
-   <div className='mx-3  w-screen '>
-   
-   <div className="movie-card block ">
-   <img src={props.poster} alt="" className='w-[200px] h-[200px] rounded-lg transform transition-transform hover:scale-110' />
-
-    <div className="movie-info text-gray-500">
-    
-      <h2>title:{props.title}</h2>
-      <p>Year:{props.year}</p>
-     
-      <p>IMDb ID:{props.imdb}</p>
-      <p>Type: {props.type}</p>
-      </div>
-    </div>
   
-   </div>
+   
+   <div className="movie-card block w-[27vw] h-[55vh] bg-gray-100 rounded-lg hover:shadow-lg">
+ 
+   <img src={props.poster} alt="" className=' w-[27vw] h-[40vh] rounded-lg transform transition-transform hover:scale-110 size-cover object-cover'  />
+
+    <div className="movie-info w-[27vw] text-gray-600 ml-1 ">
+    
+      <h2 className='text-center'>title:{props.title}</h2>
+      <p className='text-center'>Year:{props.year}</p>
+     
+      <p className='text-center'>IMDb ID:{props.imdb}</p>
+      <p className='text-center'>Type: {props.type}</p>
+      </div>
+      </div>
+   
+  
+
 
 
   ) 

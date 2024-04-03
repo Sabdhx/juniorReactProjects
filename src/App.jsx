@@ -1,16 +1,20 @@
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import './App.css'
 // import StarRating from './StarRating/StarRating'
 import Form from './formInReactjsx/Form'
 import './formInReactjsx/form.css'
 // import NewFile from './formInReactjsx/newFile'
 // import Todolist from './todolist/todolist'
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
 // import UpdatePage from './todolist/updatePage'
 // import TodoContext from './todolist/todoContext'
 import MoviesApp from './moviesApp/moviesApp'
-import ModalContext from './moviesApp/ModalContext'
+
+// import Tailwind from './tailwindProject/Tailwind'
+// import Basic from './basic.jsx/basic'
+
+
 
 function App() {
 
@@ -27,15 +31,19 @@ function App() {
           </Routes>
         </BrowserRouter>
       </ TodoContext> */}
-      
-     <BrowserRouter>
-     <Routes>
-      <Route path='/' element={<MoviesApp/>}/>
-      <Route path='/ModalContext' element={<ModalContext/>}/>
-     </Routes>
-     </BrowserRouter>
+ 
 
-    </>
+ 
+   <MoviesApp/>
+  
+
+
+      {/* <Tailwind/> */}
+{/* <Basic /> */}
+
+</>
+
+ 
   )
 }
 
