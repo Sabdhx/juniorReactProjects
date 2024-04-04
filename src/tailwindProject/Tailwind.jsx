@@ -16,11 +16,16 @@ const Tailwind = () => {
       <div className="mx-[15vw] md:mx-[1vw]  lg:mx-[1vw]">
       <AfterMiddleProject />
       </div>
-      <div className="mt-[80vh] md:mt-[9vw] lg:mt-[1vw] md:flex">
+     
+      <div className="mt-[96vh] md:mt-[9vw] lg:mt-[1vw] md:flex">
+      <div className="w-[100vw] h-[31vw] my-[4vh] ">
+      <img src="./23.png" alt="" className="w-[100vw] h-[30vw] bg-black object-cover mt-[10vh]"/>
+    </div>
         <CardsOfPrice />
         <CardsOfPrice />
         <CardsOfPrice />
       </div>
+
       <div className="">
       <Form />
       </div>

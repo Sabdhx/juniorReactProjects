@@ -41,9 +41,7 @@ const AfterMiddleProject = () => {
       </div>
      
     </div>
-    <div className="w-[100vw] h-[30vw] bg-black">
-      <img src="./23.png" alt="" className="w-[100vw] h-[30vw] bg-black object-cover"/>
-    </div>
+   
     </>
   );
 };

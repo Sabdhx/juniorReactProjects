@@ -19,7 +19,7 @@ const Basic = () => {
   return (
   
     <div>
-      <button onClick={setcount(count++)}>click</button>
+      <button onClick={()=>setcount(count++)}>click</button>
       {count}
     </div>
   )
