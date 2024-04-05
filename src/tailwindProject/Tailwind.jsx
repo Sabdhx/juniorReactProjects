@@ -5,10 +5,12 @@ import AfterMiddleProject from "./afterMiddleProject";
 import CardsOfPrice from "./CardsOfPrice";
 import Form from "./Form";
 import Last from "./Last";
+import RectangularPicture from "./rectangularPicture";
+
 
 const Tailwind = () => {
   return (
-    <div className="bg-gray-900 text-gray-300">
+    <div className="text-gray-300">
       <div className="block">
         <Navbar />
       </div>
@@ -17,10 +19,10 @@ const Tailwind = () => {
       <AfterMiddleProject />
       </div>
      
-      <div className="mt-[96vh] md:mt-[9vw] lg:mt-[1vw] md:flex">
-      <div className="w-[100vw] h-[31vw] my-[4vh] ">
-      <img src="./23.png" alt="" className="w-[100vw] h-[30vw] bg-black object-cover mt-[10vh]"/>
-    </div>
+      
+   <RectangularPicture/>
+   
+      <div className="mt-[6vh]  lg:mt-[6vw] md:flex lg:mx-[5%] lg:ml-[2vw]   text-black gap-[2vw]">
         <CardsOfPrice />
         <CardsOfPrice />
         <CardsOfPrice />

@@ -5,7 +5,7 @@ import Tailwind from "./tailwindProject/Tailwind";
 function App() {
   return (
     <>
-     <Tailwind/>
+<Tailwind/>
     </>
   );
 }

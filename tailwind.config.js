@@ -1,3 +1,4 @@
+
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
@@ -7,7 +8,11 @@ export default {
   theme: {
     extend: {
       fontFamily:{
-        'custom': ['Roboto', 'sans-serif']
+        'merriweather': ['Merriweather', 'serif'],
+        'tacone': ['Tac One', 'sans-serif'],
+        'dancing': ['Dancing Script', 'cursive'], 
+        'Roboto': ["Roboto", 'sans-serif'],
+        'oxygen': ["Oxygen", 'sans-serif']
       }
     },
   },
