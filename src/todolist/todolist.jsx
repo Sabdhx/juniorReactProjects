@@ -4,7 +4,9 @@ import { Mycontext } from "./todoContext";
 
 const Todolist = () => {
   const { todoItems, setTodoItems } = useContext(Mycontext);
-  const [input, setinput] = useState("");
+  const initialText =
+  todos.find((todo) => todo.id === parseInt(id))?.text || "";
+  const [input, setinput] = useState(initialText);
 
   const inputHandler = (e) => {
     setinput(e.target.value);

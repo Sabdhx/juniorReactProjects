@@ -1,0 +1,233 @@
+export default Array= [
+  {
+    "id": 1,
+    "title": "The Shawshank Redemption",
+    "genre": ["Drama"],
+    "category": "Classic",
+    "director": "Frank Darabont",
+    "release_year": 1994,
+    "rating": 9.3,
+    "synopsis": "Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.",
+    "actors": ["Tim Robbins", "Morgan Freeman"]
+  },
+  {
+    "id": 2,
+    "title": "Inception",
+    "genre": ["Action", "Adventure", "Sci-Fi"],
+    "category": "Modern",
+    "director": "Christopher Nolan",
+    "release_year": 2010,
+    "rating": 8.8,
+    "synopsis": "A thief who enters the dreams of others to steal secrets from their subconscious gets a final task of planting an idea into the mind of a CEO.",
+    "actors": ["Leonardo DiCaprio", "Joseph Gordon-Levitt", "Ellen Page"]
+  },
+  {
+    "id": 3,
+    "title": "The Godfather",
+    "genre": ["Crime", "Drama"],
+    "category": "Classic",
+    "director": "Francis Ford Coppola",
+    "release_year": 1972,
+    "rating": 9.2,
+    "synopsis": "The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son.",
+    "actors": ["Marlon Brando", "Al Pacino", "James Caan"]
+  },
+  {
+    "id": 4,
+    "title": "The Dark Knight",
+    "genre": ["Action", "Crime", "Drama"],
+    "category": "Modern",
+    "director": "Christopher Nolan",
+    "release_year": 2008,
+    "rating": 9.0,
+    "synopsis": "When the menace known as The Joker emerges from his mysterious past, he wreaks havoc and chaos on the people of Gotham. Batman must accept one of the greatest psychological and physical tests of his ability to fight injustice.",
+    "actors": ["Christian Bale", "Heath Ledger", "Aaron Eckhart"]
+  },
+  {
+    "id": 5,
+    "title": "Pulp Fiction",
+    "genre": ["Crime", "Drama"],
+    "category": "Classic",
+    "director": "Quentin Tarantino",
+    "release_year": 1994,
+    "rating": 8.9,
+    "synopsis": "The lives of two mob hitmen, a boxer, a gangster and his wife, and a pair of diner bandits intertwine in four tales of violence and redemption.",
+    "actors": ["John Travolta", "Uma Thurman", "Samuel L. Jackson"]
+  },
+  {
+    "id": 6,
+    "title": "Interstellar",
+    "genre": ["Adventure", "Drama", "Sci-Fi"],
+    "category": "Modern",
+    "director": "Christopher Nolan",
+    "release_year": 2014,
+    "rating": 8.6,
+    "synopsis": "A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival.",
+    "actors": ["Matthew McConaughey", "Anne Hathaway", "Jessica Chastain"]
+  },
+  {
+    "id": 7,
+    "title": "The Matrix",
+    "genre": ["Action", "Sci-Fi"],
+    "category": "Classic",
+    "director": "Lana Wachowski, Lilly Wachowski",
+    "release_year": 1999,
+    "rating": 8.7,
+    "synopsis": "A computer hacker learns from mysterious rebels about the true nature of his reality and his role in the war against its controllers.",
+    "actors": ["Keanu Reeves", "Laurence Fishburne", "Carrie-Anne Moss"]
+  },
+  {
+    "id": 8,
+    "title": "Forrest Gump",
+    "genre": ["Drama", "Romance"],
+    "category": "Classic",
+    "director": "Robert Zemeckis",
+    "release_year": 1994,
+    "rating": 8.8,
+    "synopsis": "The presidencies of Kennedy and Johnson, the Vietnam War, the Watergate scandal and other historical events unfold from the perspective of an Alabama man with an IQ of 75, whose only desire is to be reunited with his childhood sweetheart.",
+    "actors": ["Tom Hanks", "Robin Wright", "Gary Sinise"]
+  },
+  {
+    "id": 9,
+    "title": "The Lord of the Rings: The Return of the King",
+    "genre": ["Adventure", "Drama", "Fantasy"],
+    "category": "Classic",
+    "director": "Peter Jackson",
+    "release_year": 2003,
+    "rating": 8.9,
+    "synopsis": "Gandalf and Aragorn lead the World of Men against Sauron's army to draw his gaze from Frodo and Sam as they approach Mount Doom with the One Ring.",
+    "actors": ["Elijah Wood", "Viggo Mortensen", "Ian McKellen"]
+  },
+  {
+    "id": 10,
+    "title": "Fight Club",
+    "genre": ["Drama"],
+    "category": "Classic",
+    "director": "David Fincher",
+    "release_year": 1999,
+    "rating": 8.8,
+    "synopsis": "An insomniac office worker and a devil-may-care soapmaker form an underground fight club that evolves into something much, much more.",
+    "actors": ["Brad Pitt", "Edward Norton", "Helena Bonham Carter"]
+  },
+  {
+    "id": 11,
+    "title": "The Lord of the Rings: The Fellowship of the Ring",
+    "genre": ["Adventure", "Drama", "Fantasy"],
+    "category": "Classic",
+    "director": "Peter Jackson",
+    "release_year": 2001,
+    "rating": 8.8,
+    "synopsis": "A meek Hobbit from the Shire and eight companions set out on a journey to destroy the powerful One Ring and save Middle-earth from the Dark Lord Sauron.",
+    "actors": ["Elijah Wood", "Ian McKellen", "Orlando Bloom"]
+  },
+  {
+    "id": 12,
+    "title": "The Lord of the Rings: The Two Towers",
+    "genre": ["Adventure", "Drama", "Fantasy"],
+    "category": "Classic",
+    "director": "Peter Jackson",
+    "release_year": 2002,
+    "rating": 8.7,
+    "synopsis": "While Frodo and Sam edge closer to Mordor with the help of the shifty Gollum, the divided fellowship makes a stand against Sauron's new ally, Saruman, and his hordes of Isengard.",
+    "actors": ["Elijah Wood", "Ian McKellen"]
+  },
+  {
+    "id": 13,
+    "title": "Schindler's List",
+    "genre": ["Biography", "Drama", "History"],
+    "category": "Classic",
+    "director": "Steven Spielberg",
+    "release_year": 1993,
+    "rating": 8.9,
+    "synopsis": "In German-occupied Poland during World War II, industrialist Oskar Schindler gradually becomes concerned for his Jewish workforce after witnessing their persecution by the Nazis.",
+    "actors": ["Liam Neeson", "Ben Kingsley", "Ralph Fiennes"]
+  },
+  {
+    "id": 14,
+    "title": "The Green Mile",
+    "genre": ["Crime", "Drama", "Fantasy"],
+    "category": "Classic",
+    "director": "Frank Darabont",
+    "release_year": 1999,
+    "rating": 8.6,
+    "synopsis": "The lives of guards on Death Row are affected by one of their charges: a black man accused of child murder and rape, yet who has a mysterious gift.",
+    "actors": ["Tom Hanks", "Michael Clarke Duncan", "David Morse"]
+  },
+  {
+    "id": 15,
+    "title": "The Silence of the Lambs",
+    "genre": ["Crime", "Drama", "Thriller"],
+    "category": "Classic",
+    "director": "Jonathan Demme",
+    "release_year": 1991,
+    "rating": 8.6,
+    "synopsis": "A young FBI cadet must receive the help of an incarcerated and manipulative cannibal killer to help catch another serial killer, a madman who skins his victims.",
+    "actors": ["Jodie Foster", "Anthony Hopkins", "Lawrence A. Bonney"]
+  },
+  {
+    "id": 16,
+    "title": "Saving Private Ryan",
+    "genre": ["Drama", "War"],
+    "category": "Classic",
+    "director": "Steven Spielberg",
+    "release_year": 1998,
+    "rating": 8.6,
+    "synopsis": "Following the Normandy Landings, a group of U.S. soldiers go behind enemy lines to retrieve a paratrooper whose brothers have been killed in action.",
+    "actors": ["Tom Hanks", "Matt Damon", "Tom Sizemore"]
+  },
+  {
+    "id": 17,
+    "title": "The Departed",
+    "genre": ["Crime", "Drama", "Thriller"],
+    "category": "Modern",
+    "director": "Martin Scorsese",
+    "release_year": 2006,
+    "rating": 8.5,
+    "synopsis": "An undercover cop and a mole in the police attempt to identify each other while infiltrating an Irish gang in South Boston.",
+    "actors": ["Leonardo DiCaprio", "Matt Damon", "Jack Nicholson"]
+  },
+  {
+    "id": 18,
+    "title": "Gladiator",
+    "genre": ["Action", "Adventure", "Drama"],
+    "category": "Classic",
+    "director": "Ridley Scott",
+    "release_year": 2000,
+    "rating": 8.5,
+    "synopsis": "A former Roman General sets out to exact vengeance against the corrupt emperor who murdered his family and sent him into slavery.",
+    "actors": ["Russell Crowe", "Joaquin Phoenix", "Connie Nielsen"]
+  },
+  {
+    "id": 19,
+    "title": "The Prestige",
+    "genre": ["Drama", "Mystery", "Sci-Fi"],
+    "category": "Modern",
+    "director": "Christopher Nolan",
+    "release_year": 2006,
+    "rating": 8.5,
+    "synopsis": "After a tragic accident, two stage magicians engage in a battle to create the ultimate illusion while sacrificing everything they have to outwit each other.",
+    "actors": ["Christian Bale", "Hugh Jackman", "Scarlett Johansson"]
+  },
+  {
+    "id": 20,
+    "title": "The Lion King",
+    "genre": ["Animation", "Adventure", "Drama"],
+    "category": "Classic",
+    "director": "Roger Allers, Rob Minkoff",
+    "release_year": 1994,
+    "rating": 8.5,
+    "synopsis": "Lion prince Simba and his father are targeted by his bitter uncle, who wants to ascend the throne himself.",
+    "actors": ["Matthew Broderick", "Jeremy Irons", "James Earl Jones"]
+  },
+  {
+    "id": 21,
+    "title": "The Matrix Reloaded",
+    "genre": ["Action", "Sci-Fi"],
+    "category": "Modern",
+    "director": "Lana Wachowski, Lilly Wachowski",
+    "release_year": 2003,
+    "rating": 7.2,
+    "synopsis": "Neo and his allies race against time before the machines discover the city of Zion and destroy it. While seeking the truth about the Matrix, Neo must save Trinity from a dark fate within his dreams.",
+    "actors": ["Keanu Reeves", "Laurence Fishburne", "Carrie-Anne Moss"]
+  }
+]

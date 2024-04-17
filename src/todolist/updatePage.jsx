@@ -2,11 +2,12 @@ import React, { useContext, useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { Mycontext } from "./todoContext";
 
+
 const UpdatePage = () => {
+  
   const { id } = useParams();
   const { todoItems, setTodoItems } = useContext(Mycontext);
   const [input, setinput] = useState("");
-  const [data, setData] = useState({});
 
   function check() {
     const test = todoItems.filter((item) => item.id == id);
@@ -45,5 +46,4 @@ const UpdatePage = () => {
     </div>
   );
 };
-
 export default UpdatePage;

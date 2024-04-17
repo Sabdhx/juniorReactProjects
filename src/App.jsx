@@ -1,12 +1,14 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
-import Tailwind from "./tailwindProject/Tailwind";
+import MainPage from "./quizzGame/MainPage";
 
 function App() {
   return (
-    <>
-<Tailwind/>
-    </>
+    <>    
+    <MainPage/>
+    
+
+</>
+
   );
 }
 
